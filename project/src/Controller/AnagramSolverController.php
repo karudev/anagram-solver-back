@@ -45,18 +45,18 @@ class AnagramSolverController extends AbstractController
      */
     public function api(Request $request, AnagramSolverService $anagramSolverService)
     {
-        $initalString = $request->get('initalString', null);
+        $initialString = $request->get('initialString', null);
         $stringToCompare = $request->get('stringToCompare', null);
 
-        if($initalString === null || $stringToCompare === null){
+        if($initialString === null || $stringToCompare === null){
             return new Response(null, Response::HTTP_BAD_REQUEST);
         }
 
-        $p = $anagramSolverService->run($initalString, $stringToCompare);
+        $p = $anagramSolverService->run($initialString, $stringToCompare);
 
         return $this->json(['data' =>
             [
-                'initialString' => $initalString,
+                'initialString' => $initialString,
                 'stringToCompare' => $stringToCompare,
                 'p' => $p,
             ]
