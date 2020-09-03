@@ -13,7 +13,7 @@ class AnagramSolverService
      */
     public function run(string $a, string $b)
     {
-        # if string has not the same number of caraters, return -1
+        # if string has not the same number of caracters, return -1
         if (strlen($a) !== strlen($b)) {
             $p = -1;
         } else {
