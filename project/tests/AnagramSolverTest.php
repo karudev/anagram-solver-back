@@ -36,7 +36,12 @@ class AnagramSolverTest extends KernelTestCase
             ['here', 'hre', -1],
             ['here', 'here', 0],
             ['here', 'heer', 1],
-            ['esysaasse', 'essayasse', 3],
+            ['hero', 'heor', 1],
+            ['eyssaasse', 'essayasse', 3],
+            ['hare', 'hare', 0],
+            ['dnolyvee', 'dolyveen', 6],
+            ['edlko', 'delko', 1],
+            ['edlko', 'dleko', 2],
         ];
     }
 
