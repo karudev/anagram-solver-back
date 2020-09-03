@@ -1,0 +1,6 @@
+/docker/php-apache/logs/*
+/docker/mysql/db
+/project/vendor
+/project/var/sessions/*
+/project/var/cache/*
+/project/var/logs/*

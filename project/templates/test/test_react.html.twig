@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Test React{% endblock %}
+
+{% block body %}
+
+   <div id="root"></div>
+
+{% endblock %}
+ {% block javascripts %}
+     {{ encore_entry_script_tags('app') }}
+
+     <!-- Renders app.js & a webpack runtime.js file
+         <script src="/build/runtime.js"></script>
+         <script src="/build/app.js"></script> -->
+ {% endblock %}
