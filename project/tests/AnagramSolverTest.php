@@ -42,6 +42,9 @@ class AnagramSolverTest extends KernelTestCase
             ['dnolyvee', 'dolyveen', 6],
             ['edlko', 'delko', 1],
             ['edlko', 'dleko', 2],
+            ['ledok', 'delko', 4],
+            ['Tar', 'Rat', 3],
+            ['Arc', 'Car', 4],
         ];
     }
 
